@@ -1,14 +1,15 @@
-# Danh — Personal Portfolio
+# Danny Ngo — Personal Portfolio
 
-A fast, accessible, responsive portfolio focused on environmental data, spatial analysis, and research communication.
+A fast, accessible, responsive portfolio for Danny Ngo, a Tulane University student combining Earth and Environmental Sciences, data science, GIS, and research.
 
 ## Features
 
 - Semantic, accessible HTML
-- Responsive layout for mobile, tablet, and desktop
+- Responsive mobile, tablet, and desktop layouts
 - Light and dark themes with saved preference
-- SEO and social-sharing metadata
-- No frameworks or third-party runtime dependencies
+- SEO, Open Graph, and structured data metadata
+- CV-backed experience, project, skill, and education content
+- No framework or third-party runtime dependencies
 - Ready for GitHub Pages
 
 ## Local preview
@@ -23,6 +24,9 @@ Then visit http://localhost:8000.
 
 Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main**, and choose **/(root)**.
 
-## Customize
+## Files
 
-Update the privacy-conscious placeholder content in index.html with details you are comfortable publishing. Add a resume, professional portrait, contact method, and verified project results as desired.
+- index.html — page content and semantic structure
+- styles.css — responsive design and color themes
+- script.js — theme preference and mobile navigation
+- favicon.svg — site icon
