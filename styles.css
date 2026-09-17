@@ -167,7 +167,7 @@ h3 { font-size: 1.4rem; }
 .contact-card > p:not(.section-kicker) { max-width: 650px; margin-inline: auto; color: rgba(255,255,255,.82); }
 .contact-actions { justify-content: center; }
 .button.light { background: #fff; color: #0a684c; }
-.text-link { color: #fff; font-weight: 750; text-underline-offset: 4px; }
+.text-link { color: var(--accent); font-weight: 750; text-underline-offset: 4px; }\n.contact-card .text-link { color: #fff; }
 .site-footer { padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
 .site-footer .container { display: flex; justify-content: space-between; gap: 1rem; }
 .site-footer p { margin: 0; }
