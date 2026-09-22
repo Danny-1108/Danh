@@ -241,3 +241,7 @@ h3 { font-size: 1.4rem; }
 @media (max-width: 700px) {
   .leadership-grid { grid-template-columns: 1fr; }
 }
+
+
+.contact-actions-stacked { flex-direction: column; }
+.contact-socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
