@@ -1,32 +1,35 @@
 # Danny Ngo — Personal Portfolio
 
-A fast, accessible, responsive portfolio for Danny Ngo, a Tulane University student combining Earth and Environmental Sciences, data science, GIS, and research.
+A responsive professional portfolio presenting Danny Ngo’s environmental research, geospatial analysis, applied data science, and community leadership.
 
-## Features
+## Content strategy
 
-- Semantic, accessible HTML
+The website combines the strongest material from research- and industry-oriented résumés:
+
+- A concise professional positioning statement
+- Selected, quantified research and professional experience
+- Three representative projects with context and outcomes
+- Skills grouped by practical use
+- Leadership and STEM outreach
+- Education, honors, and professional contact links
+
+The homepage is intentionally curated rather than reproducing every résumé bullet.
+
+## Technical features
+
+- Semantic and accessible HTML
 - Responsive mobile, tablet, and desktop layouts
 - Light and dark themes with saved preference
-- SEO, Open Graph, and structured data metadata
-- CV-backed experience, project, skill, and education content
+- SEO, Open Graph, and Schema.org metadata
 - No framework or third-party runtime dependencies
-- Ready for GitHub Pages
+- GitHub Pages compatible
 
 ## Local preview
-
-Open index.html in a browser, or run:
 
     python -m http.server 8000
 
 Then visit http://localhost:8000.
 
-## Deploy with GitHub Pages
+## Deployment
 
-Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main**, and choose **/(root)**.
-
-## Files
-
-- index.html — page content and semantic structure
-- styles.css — responsive design and color themes
-- script.js — theme preference and mobile navigation
-- favicon.svg — site icon
+GitHub Pages deploys from the **main** branch and **/(root)** folder.
