@@ -212,3 +212,32 @@ h3 { font-size: 1.4rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Curated portfolio additions */
+.about-links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.8rem; }
+.inline-link { color: var(--accent); font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.inline-link:hover { color: var(--accent-dark); }
+.metric-pair { display: flex; flex-wrap: wrap; gap: 1.4rem; margin: 1.6rem 0; color: var(--muted); font-size: .83rem; }
+.metric-pair span { display: flex; align-items: baseline; gap: .35rem; }
+.metric-pair strong { color: var(--text); font-size: 1.45rem; letter-spacing: -.04em; }
+.card-action { margin-top: 1.6rem; margin-bottom: 0 !important; }
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.skill-card, .leadership-card {
+  position: relative; padding: 2rem; border: 1px solid var(--line);
+  border-radius: var(--radius); background: var(--surface);
+}
+.skill-card h3 { max-width: 12rem; margin-bottom: 1.6rem; }
+.skill-card p { margin-bottom: .45rem; font-weight: 720; }
+.skill-card small { display: block; margin: -.1rem 0 1rem; color: var(--muted); line-height: 1.5; }
+.skill-index { position: absolute; right: 1.5rem; top: 1.35rem; color: var(--line); font-size: 2.4rem; font-weight: 900; line-height: 1; }
+.compact-heading { grid-template-columns: 1fr; margin-bottom: 2.5rem; }
+.leadership-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+.leadership-card > p:not(.role-org) { color: var(--muted); }
+.leadership-card > strong { display: inline-block; margin-top: .6rem; color: var(--accent); font-size: .85rem; }
+
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .leadership-grid { grid-template-columns: 1fr; }
+}
