@@ -46,3 +46,25 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revealElements = document.querySelectorAll(
+  ".timeline-item, .project-card, .skill-card, .leadership-card, .education-card"
+);
+
+if (!reduceMotion && "IntersectionObserver" in window) {
+  document.documentElement.classList.add("reveal-ready");
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+  });
+}
